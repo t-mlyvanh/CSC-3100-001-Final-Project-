@@ -206,7 +206,7 @@ header {
     }
 }
 
-/* CSS for this specific file */
+/* landing page*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -237,3 +237,4 @@ header {
 .navigation a:hover {
     background-color: #eee;
 }
+
