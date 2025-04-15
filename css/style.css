@@ -113,3 +113,127 @@ body {
 .register-link p a:hover {
     text-decoration: underline;
 }
+
+.wrapper .home-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.home-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.home-link p a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Full viewport height */
+}
+
+section {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px; /* Add some space from the top */
+    margin-bottom: auto; /* Push content to the top */
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.navigation {
+    display: flex;
+    gap: 15px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info {
+    margin: 20px 0;
+}
+
+.info-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .info-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .info {
+        font-size: 14px;
+    }
+}
+
+/* CSS for this specific file */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color:#f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+}
+
+.navigation {
+    display: flex;
+    gap: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.navigation a:hover {
+    background-color: #eee;
+}
