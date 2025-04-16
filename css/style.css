@@ -31,7 +31,6 @@ body {
     text-align: center;
 }
 
-
 .wrapper .input-box {
     position: relative;
     width: 100%;
@@ -135,9 +134,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center horizontally */
-    min-height: 100vh; /* Full viewport height */
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
 section {
@@ -147,71 +146,10 @@ section {
     padding: 20px;
     width: 80%;
     max-width: 800px;
-    margin-top: 20px; /* Add some space from the top */
-    margin-bottom: auto; /* Push content to the top */
+    margin-top: 20px;
+    margin-bottom: auto;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.navigation {
-    display: flex;
-    gap: 15px;
-}
-
-.content {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.info {
-    margin: 20px 0;
-}
-
-.info-btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navigation {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .info-btn {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .info {
-        font-size: 14px;
-    }
-}
-
-/* landing page*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-    color:#f4f4f4;
 }
 
 header {
@@ -238,3 +176,75 @@ header {
     background-color: #eee;
 }
 
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info {
+    margin: 20px 0;
+}
+
+.info-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .info-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .info {
+        font-size: 14px;
+    }
+}
+
+/* Role Selection Page (Landing) */
+.role-selection {
+    text-align: center;
+    padding: 40px;
+}
+
+.role-selection h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.role-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.role-buttons a {
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.role-buttons a:hover {
+    background-color: #ddd;
+}
